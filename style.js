@@ -1,10 +1,14 @@
-$("button").click(function () {
+$("#click").click(function () {
 
-      
+      let colors = ['#ef6e69','#f279a2','#9170cb','#5eb3f6','#5eb3f6','#fee183'];
 	  
-	  function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
-};
-$("#div").last().clone().css('background','rgb('+getRandomInt(0,255)+', '+getRandomInt(0,255)+', '+getRandomInt(0,255)+')').appendTo('body');
+	  
+
+$(".div").last().clone().appendTo('.wrapper_div').find('div.item').css('background',colors[Math.floor(Math.random() * colors.length)]);
 
     });
+
+
+
+
+
