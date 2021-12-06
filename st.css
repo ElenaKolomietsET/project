@@ -1,6 +1,187 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+
+
+.wrapper_main{
+	background: #ebf3f6;
+	margin: 0 auto;
+	margin-top: 0;
+	width: 720px;
+	min-height: 155px;
+}
+
 .div{
-	width:500px;
-	height: 60px;
-	background: black;
-	margin-bottom:2px;
+	width:600px;
+	height: 59px;
+padding-top: 14px;
+	margin: 0px 80px 0 34px;
+}
+.container{
+	display: flex;
+	flex-direction: row;
+	width:100%;
+	height: 100%;
+	position: relative;
+}
+.item{
+background: #ee6a68;
+position: relative;
+z-index: 2;
+border-radius: 3px;
+}
+.item:nth-child(2){
+width: 59px;
+height: 100%;
+background: #ee6a68;
+
+}
+.item:nth-child(3){
+	flex: 1 1 auto;
+	margin-left: 1px;
+}
+.input{
+	position: absolute;
+	top: 21px;
+	left: 18px;
+	z-index: 10;
+
+
+}
+
+
+.container .input span{
+	color: white;
+	font: 550 18px arial;
+	margin-left: 42px;
+}
+.TodoItem{
+ outline: 1px solid gray;
+    padding: 0;
+}
+.wrapper{
+background: white;
+	display: grid;
+	grid-template-columns: 120px auto 130px 90px;
+width: 600px;
+min-height: 48px;
+margin: 15px 80px 0 34px;
+border-radius: 3px;
+
+}
+.add{
+	grid-column-start: 1;
+	grid-column-end: 3;
+
+
+
+}
+ .add input{
+ 	width: 100%;
+ 	height: 100%;
+outline: none;
+border: none;
+ 	color: #7e756c;
+ font: 14px arial;
+ padding-left: 21px;
+
+ }
+.container_colors{
+	grid-column-start: 3;
+	grid-column-end: 3;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+
+}
+.container_colors div{
+	width: 14px;
+	height: 14px;
+
+	border-radius: 3px;
+	margin-top: 17px;
+}
+
+.button{
+	rid-column-start: 4;
+	grid-column-end: 5;
+	padding: 6px 9px 6px 15px;
+}
+#click{
+	background: #26a59a;
+	width: 64px;
+	height: 34px;
+	border-style: none;
+	border-radius: 3px;
+	color: white;
+	font-family: arial;
+}
+.c1{
+	background: #ef6e69;
+}
+.c2{
+	background: #f279a2;
+}
+.c3{
+	background: #9170cb;
+}
+.c4{
+	background: #5eb3f6;
+}
+.c5{
+	background: #5eb3f6;
+}
+.c6{
+	background: #fee183;
 }
