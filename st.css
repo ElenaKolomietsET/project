@@ -50,6 +50,25 @@ table {
 
 
 
+.c1{
+	background-color: #ef6e69;
+}
+.c2{
+	background: #f279a2;
+}
+.c3{
+	background: #9170cb;
+}
+.c4{
+	background: #5eb3f6;
+}
+.c5{
+	background: #67d7e5;
+}
+.c6{
+	background: #fee183;
+}
+
 
 
 
@@ -201,22 +220,4 @@ border: none;
 	border-radius: 3px;
 	color: white;
 	font-family: arial;
-}
-.c1{
-	background: #ef6e69;
-}
-.c2{
-	background: #f279a2;
-}
-.c3{
-	background: #9170cb;
-}
-.c4{
-	background: #5eb3f6;
-}
-.c5{
-	background: #67d7e5;
-}
-.c6{
-	background: #fee183;
 }
