@@ -81,7 +81,7 @@ $(".create").find('.Todo').addClass('TodoText');
 $(".create").find('.item').css('background',colors[Math.floor(Math.random() * colors.length)]);
 $(".create").find('#TodoItem').addClass('TodoItemClone');
 
-$('.div').attr('id', function() { return $('.div').index()+"1"; });
+
 
 });
 
@@ -95,8 +95,6 @@ var val = $('#AddNewItem').val();//Получаем данные из input
 
 });
 
-
-/*$('.c1').css('background', '#ef6e69');*/
 
 
 
