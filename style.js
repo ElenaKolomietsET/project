@@ -21,21 +21,30 @@ $('#click').click(function(){
 $(".create").find('.span_text_todo').css('display','none');
 
 $(".create").find('.Todo').addClass('TodoText');
-$(".div").find('.item').css('background','colors[ Math.floor(Math.random() * colors.length) ]');
+$(".create").find('.item').css('background',colors[Math.floor(Math.random() * colors.length)]);
 
 });
 
-
+function(){     
+    if($(".c1").attr("checked") == 'checked') { 
+        
+        $('.item').css('background','color(#ef6e69)');
+        
+        return true;
+    }
+    return false;
+};
 
 
 
 /*
-$('#click').click(function(){
-	
-$(".create").find('.Todo').removeClass('TodoItem');
+$('.c1').click(function(){
+$("#agree").prop('checked')	
 
-});*/
 
+
+});
+*/
 
 $('#click').click(function(){
 	
