@@ -59,144 +59,62 @@ $('#TodoItem:checked').parents('.container_input').siblings('.item').css('backgr
 
 
 
-
-
-
-$("#click").click(function () {	  	
-
-
-
-
+var button = document.querySelector('#click');
+var input = document.querySelector('#AddNewItem');
+button.addEventListener('click', function() {
+  if(input.value !== "") {
 
 $(".div").addClass('create').last().clone().appendTo('.wrapper_div');
-
 $('.div').prev().removeClass('create');
-
+ let colors = ['#ef6e69','#f279a2','#9170cb','#5eb3f6','#5eb3f6','#fee183'];
+$(".create").css('background',colors[Math.floor(Math.random() * colors.length)]); 
 $('.Todo').removeClass('TodoText');
-
-    });
-
-$('#click').click(function(){
-	      let colors = ['#ef6e69','#f279a2','#9170cb','#5eb3f6','#5eb3f6','#fee183'];
-
-
 $(".create").find('.span_text_todo').css('display','none');
-
 $(".create").find('.Todo').addClass('TodoText');
-$(".create").find('.item').css('background',colors[Math.floor(Math.random() * colors.length)]);
+
 $(".create").find('#TodoItem').addClass('TodoItemClone');
-
-
-
-});
-
-
-
-
-$('#click').click(function(){
-	
 var val = $('#AddNewItem').val();//Получаем данные из input
   $('.TodoText').html(val);//Вставляем значение в тег с классом txt
 
+  } else{
 
+  }
+  	
+}, false)
 
-
-
-
-
+$('#click').click(function(){
+	
+$('#AddNewItem').val('');
 });
 
 
 
-
 $(document).on('keypress',function(e) {
-    if(e.which == 13) {
-      
+	var input = document.querySelector('#AddNewItem');
+    if(e.which == 13 && input.value !== "") {
 $(".div").addClass('create').last().clone().appendTo('.wrapper_div');
-
 $('.div').prev().removeClass('create');
-
-$('.Todo').removeClass('TodoText');
-    }
-});
-
-
-
-$(document).on('keypress',function(e) {
-    if(e.which == 13) {
-        
-    
-
  let colors = ['#ef6e69','#f279a2','#9170cb','#5eb3f6','#5eb3f6','#fee183'];
-
-
+$(".create").css('background',colors[Math.floor(Math.random() * colors.length)]); 
+$('.Todo').removeClass('TodoText');
 $(".create").find('.span_text_todo').css('display','none');
-
 $(".create").find('.Todo').addClass('TodoText');
-$(".create").find('.item').css('background',colors[Math.floor(Math.random() * colors.length)]);
+
 $(".create").find('#TodoItem').addClass('TodoItemClone');
-
-    }
-});
-
-$(document).on('keypress',function(e) {
-    if(e.which == 13) {
-  
-        var val = $('#AddNewItem').val();//Получаем данные из input
+var val = $('#AddNewItem').val();//Получаем данные из input
   $('.TodoText').html(val);//Вставляем значение в тег с классом txt
 
-$('.test')[0].reset();
+    } 
+});
 
 
-/*if($('#TodoItem').value === null || $('#TodoItem').value === ""){
-alert('!');
+$(document).on('keypress',function(e) {
+    if(e.which == 13) {
 
-};*/
 
+$('#AddNewItem').val('');
 
 
     }
 });
 
-
-/*
-  if(document.getElementById("#TodoItem").value === '') {
-    alert("!!!");
-}*/
-
-
-
-/*
-$('.test').submit(function () {
-    var form = $(this);
-    var field = [];
-    form.find('input[test]').each(function () {
-      field.push('input[test]');
-      var value = $(this).val(),
-          line = $(this).closest('.input');
-      for(var i=0;i<field.length;i++) {
-        if( !value ) {
-          line.addClass('some-form__line-required');
-          setTimeout(function() {
-            line.removeClass('some-form__line-required')
-          }.bind(this),2000);
-          event.preventDefault();
-        }
-      }
-    });
-  });
-*/
-
-
-            
-var button = document.querySelectorAll('#click');
-var input = document.querySelector('#TodoItem');
-for (var i = 0; i < button.length; i++) {
-  button[i].addEventListener('click', function() {
-    if (input.value !== '') {
-      alert('не пустой');
-    }else{
-    alert('Пустой');
-    }
-  })
-}
