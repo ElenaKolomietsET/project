@@ -1,15 +1,13 @@
 
 
 
-/*$('.TodoItemClone').parentsUntil().siblings('.item').css('background', '#ef6e69');*/
-
 
 
 $('.c1').click(function(){
 
-$('.TodoItemClone:checked').parents('.container_input').siblings('.item').css('background', '#ef6e69');
+$('.TodoItemClone:checked').parents('.div').css('background', '#ef6e69');
 
-$('#TodoItem:checked').parents('.container_input').siblings('.item').css('background', '#ef6e69');
+$('#TodoItem:checked').parents('.div').css('background', '#ef6e69');
 
 
 });
@@ -17,42 +15,42 @@ $('#TodoItem:checked').parents('.container_input').siblings('.item').css('backgr
 
 $('.c2').click(function(){
 
-$('.TodoItemClone:checked').parents('.container_input').siblings('.item').css('background', '#f279a2');
+$('.TodoItemClone:checked').parents('.div').css('background', '#f279a2');
 
-$('#TodoItem:checked').parents('.container_input').siblings('.item').css('background', '#f279a2');
+$('#TodoItem:checked').parents('.div').css('background', '#f279a2');
 
 
 });
 
 $('.c3').click(function(){
 
-$('.TodoItemClone:checked').parents('.container_input').siblings('.item').css('background', '#9170cb');
+$('.TodoItemClone:checked').parents('.div').css('background', '#9170cb');
 
-$('#TodoItem:checked').parents('.container_input').siblings('.item').css('background', '#9170cb');
+$('#TodoItem:checked').parents('.div').css('background', '#9170cb');
 
 
 });
 $('.c4').click(function(){
 
-$('.TodoItemClone:checked').parents('.container_input').siblings('.item').css('background', '#5eb3f6');
+$('.TodoItemClone:checked').parents('.div').css('background', '#5eb3f6');
 
-$('#TodoItem:checked').parents('.container_input').siblings('.item').css('background', '#5eb3f6');
+$('#TodoItem:checked').parents('.div').css('background', '#5eb3f6');
 
 
 });
 $('.c5').click(function(){
 
-$('.TodoItemClone:checked').parents('.container_input').siblings('.item').css('background', '#67d7e5');
+$('.TodoItemClone:checked').parents('.div').css('background', '#67d7e5');
 
-$('#TodoItem:checked').parents('.container_input').siblings('.item').css('background', '#67d7e5');
+$('#TodoItem:checked').parents('.div').css('background', '#67d7e5');
 
 
 });
 $('.c6').click(function(){
 
-$('.TodoItemClone:checked').parents('.container_input').siblings('.item').css('background', '#fee183');
+$('.TodoItemClone:checked').parents('.div').css('background', '#fee183');
 
-$('#TodoItem:checked').parents('.container_input').siblings('.item').css('background', '#fee183');
+$('#TodoItem:checked').parents('.div').css('background', '#fee183');
 
 
 });
