@@ -75,7 +75,7 @@ $(".create").find('.Todo').addClass('TodoText');
 $(".create").find('#TodoItem').addClass('TodoItemClone');
 var val = $('#AddNewItem').val();//Получаем данные из input
   $('.TodoText').html(val);//Вставляем значение в тег с классом txt
-
+$(".create").find('#TodoItem').prop('checked', false);
   } else{
 
   }
@@ -103,7 +103,7 @@ $(".create").find('.Todo').addClass('TodoText');
 $(".create").find('#TodoItem').addClass('TodoItemClone');
 var val = $('#AddNewItem').val();//Получаем данные из input
   $('.TodoText').html(val);//Вставляем значение в тег с классом txt
-
+$(".create").find('#TodoItem').prop('checked', false);
     } 
 });
 
